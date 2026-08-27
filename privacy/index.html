@@ -123,6 +123,13 @@ kind &mdash; that is a deliberate design decision, not an oversight.</p>
 and Apple does not give them to us. We receive only whether your subscription is active,
 which plan, and when it renews or expires.</p>
 
+<h3>If the app crashes</h3>
+<p>When the app stops working unexpectedly it sends a crash report so we can find the
+fault and fix it. The report says what the app was doing at the time, your device model
+and your iOS version. It is deliberately not tied to you: it carries no email, no handle
+and no account number, so we can see that a crash happened without knowing whose phone it
+happened on. This is the only thing the app sends that you did not type in yourself.</p>
+
 <h3>Settings kept only on your phone</h3>
 <p>Your appearance choice, which day your week starts, when your day rolls over, your rule
 order, your gym programme, and a few &ldquo;have you seen this yet&rdquo; markers stay on your
@@ -166,13 +173,14 @@ and none of them may use it for their own purposes.</p>
   <tr><th>Company</th><th>What they get</th><th>What for</th></tr>
   <tr><td>Supabase</td><td>Your email, handle, arc, check-ins and squad data</td><td>Our database and sign-in system</td></tr>
   <tr><td>Resend</td><td>Your email address only</td><td>Delivering your 6-digit sign-in code</td></tr>
+  <tr><td>Sentry</td><td>Crash reports: what the app was doing when it stopped working, your device model and your iOS version. <strong>Not your email, handle or account.</strong></td><td>Telling us the app crashed, so we can fix it</td></tr>
   <tr><td>RevenueCat</td><td>An anonymous account number and your subscription status. <strong>Not your email or handle.</strong></td><td>Checking whether your subscription is active</td></tr>
   <tr><td>Apple</td><td>Your payment details</td><td>Taking the payment. Apple is the seller of record &mdash; we never see your card.</td></tr>
 </table>
 
 <p><strong>Where your information is processed:</strong> your database is hosted in the
 <strong>United Kingdom</strong> (Supabase region: West Europe, London). Your email, handle,
-arc, check-ins and squad data stay in the UK. Resend, RevenueCat and Apple process data in
+arc, check-ins and squad data stay in the UK. Resend, RevenueCat, Sentry and Apple process data in
 the UK, EU and United States under standard international transfer terms.</p>
 
 <hr>
